@@ -3,7 +3,6 @@
     <Hero />
     <div class='main-container'>
       <Screenshots />
-      <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
       <InfoContainer />
       <Team />
     </div>
