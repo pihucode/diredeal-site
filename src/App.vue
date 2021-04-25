@@ -30,12 +30,20 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body {
   background: rgb(54, 54, 54) !important;
 }
 
+::selection {
+  color: white;
+  background-color: rgb(22, 118, 134);
+}
+
 h2 {
-  font-size: 32px;
+  font-size: 42px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -44,7 +52,7 @@ p {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: whitesmoke;

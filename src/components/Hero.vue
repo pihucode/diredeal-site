@@ -25,6 +25,12 @@ export default {
 
 <style scoped>
 
+p {
+  /* font-weight: bold; */
+  font-size: 24px;
+  font-style: italic;
+}
+
 .hero-container {
   background: linear-gradient(rgb(17, 17, 17), rgb(54, 54, 54));
   background: url('../assets/hero-bg.jpg');
@@ -37,11 +43,17 @@ export default {
 .hero-logo {
   width: 620px;
   max-width: 80vw;
-  margin: 64px 0;
+  margin-top: 120px;
 }
 
 .temp-container {
+  margin: auto;
   margin-top: 60px;
+  padding: 16px 0;
+  border-top: 1px solid rgba(245, 245, 245, 0.6);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.6);
+  width: 600px;
+  max-width: 80%;
 }
 
 /* Source: https://stackoverflow.com/questions/35814653/automatic-height-when-embedding-a-youtube-video/54924505 */

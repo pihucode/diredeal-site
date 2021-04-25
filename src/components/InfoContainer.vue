@@ -36,13 +36,17 @@ export default {
   background: tomato;
 } */
 
+h2 {
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+
 .info-container {
   display: flex;
   flex-direction: row;
   height: 420px;
   background: rgb(27, 27, 27);
-  border: solid whitesmoke;
-  border-radius: 4px;
+  border: 2px solid whitesmoke;
   transform: skewX(-0.24rad);
 }
 
@@ -75,8 +79,7 @@ export default {
 
 .about-container {
   flex: 3;
-  margin: 32px 48px;
-  margin-left: 0;
+  margin: 48px 48px 0 0;
   /* background: rgba(84, 47, 245, 0.404); */
   transform: skewX(0.24rad);
   z-index: 4;
