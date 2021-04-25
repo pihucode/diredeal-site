@@ -39,9 +39,8 @@ export default {
 .info-container {
   display: flex;
   flex-direction: row;
-  width: 80vw;
   height: 420px;
-  background: none;
+  background: rgb(27, 27, 27);
   border: solid whitesmoke;
   border-radius: 4px;
   transform: skewX(-0.24rad);

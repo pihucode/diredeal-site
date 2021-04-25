@@ -1,6 +1,7 @@
 <template>
   <div class='team-section'>
-    <h2>Catana Games</h2>
+    <!-- <h2>Catana Games</h2> -->
+    <img class='team-logo' :src="require(`@/assets/team-logo.png`)" />
 
     <div class='avatars-grid'>
       <div class='avatar-container' v-for="member in members" :key="member.name">
@@ -45,17 +46,25 @@ export default {
 <style scoped>
 
 p {
+  font-weight: bold;
   color: rgb(22, 21, 24);
-  z-index: 2;
-  text-align: center;
   width: 150px;
   margin: auto;
   padding: 8px 0;
+  z-index: 2;
 }
+
 .team-section {
-  background: yellowgreen;
-  width: 80%;
+  /* background: yellowgreen; */
+  max-width: 80%;
   margin: auto;
+  margin-top: 64px;
+  text-align: center;
+}
+
+.team-logo {
+  width: 360px;
+  margin-bottom: 24px;
 }
 
 .avatars-grid {
@@ -63,11 +72,12 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background: whitesmoke;
+  /* background: whitesmoke; */
 }
 
 .avatar-container {
-  background: rgb(85, 167, 192);
+  /* background: rgb(85, 167, 192); */
+  background: white;
   margin: 24px;
   border-radius: 32px;
   padding-bottom: 8px;

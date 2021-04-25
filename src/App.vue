@@ -2,7 +2,7 @@
   <div id='app'>
     <Hero />
     <div class='main-container'>
-      <Screenshots />
+      <!-- <Screenshots /> -->
       <InfoContainer />
       <Team />
     </div>
@@ -12,7 +12,7 @@
 
 <script>
 import Hero from './components/Hero'
-import Screenshots from './components/Screenshots'
+// import Screenshots from './components/Screenshots'
 import InfoContainer from './components/InfoContainer'
 import Team from './components/Team'
 import Footer from './components/Footer'
@@ -21,7 +21,7 @@ export default {
   name: 'App',
   components: {
     Hero,
-    Screenshots,
+    // Screenshots,
     InfoContainer,
     Team,
     Footer
