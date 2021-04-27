@@ -32,9 +32,9 @@ p {
 }
 
 .hero-container {
-  background: linear-gradient(rgb(17, 17, 17), rgb(54, 54, 54));
-  background: url('../assets/hero-bg.jpg');
-  background-size: cover;
+  /* background: linear-gradient(rgb(17, 17, 17), rgb(54, 54, 54)); */
+  /* background: url('../assets/hero-bg.jpg'); */
+  /* background-size: cover; */
   text-align: center;
   /* padding-bottom: 128px; */
   height: 600px;

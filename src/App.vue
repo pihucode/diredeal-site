@@ -1,30 +1,39 @@
 <template>
-  <div id='app'>
-    <Hero />
-    <div class='main-container'>
-      <!-- <Screenshots /> -->
-      <InfoContainer />
-      <Team />
-    </div>
+  <div id='app' class='wrapper'>
+
+    <section class="section parallax main-bg">
+      <Hero />
+    </section>
+
+      <div class='main-container'>
+        <!-- <Screenshots /> -->
+        <InfoContainer />
+        <Team />
+      </div>
+
     <Footer />
   </div>
 </template>
 
 <script>
+/* eslint-disable vue/no-unused-components */
+
 import Hero from './components/Hero'
-// import Screenshots from './components/Screenshots'
+import Screenshots from './components/Screenshots'
 import InfoContainer from './components/InfoContainer'
 import Team from './components/Team'
 import Footer from './components/Footer'
+import TestA from './components/TestA'
 
 export default {
   name: 'App',
   components: {
     Hero,
-    // Screenshots,
+    Screenshots,
     InfoContainer,
     Team,
-    Footer
+    Footer,
+    TestA
   }
 }
 </script>
@@ -65,4 +74,43 @@ p {
   background: rgb(27, 27, 27);
   margin-top: 60px;
 }
+
+/* PARALLAX BG */
+/* Source: https://www.digitalocean.com/community/tutorials/css-pure-css-parallax */
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+  /* background: rgb(49, 193, 212); */
+}
+
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+
+.static {
+  background: rgb(155, 212, 49);
+}
+
+.main-bg::after {
+  background: url('./assets/hero-bg.jpg') no-repeat center / cover;
+}
+
 </style>
