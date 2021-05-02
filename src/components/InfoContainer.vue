@@ -13,7 +13,7 @@
       <div class='about-container'>
         <h2>About</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Dire Deal is a roguelite card game set in a fantasy world filled with threatening monsters. As a bounty hunter, players will fight dangerous creatures, each with their own abilities. The game emphasizes planning and resource management, as in battle, a single misstep can have long-lasting consequences.
         </p>
       </div>
     </div>

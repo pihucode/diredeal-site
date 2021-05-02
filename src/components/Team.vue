@@ -21,20 +21,36 @@ export default {
     return {
       members: [
         {
-          name: 'Lorem ipsum',
+          name: 'Annie Deng',
+          avatar: 'annie',
+        },
+        {
+          name: 'Genna Haddad',
+          avatar: 'genna',
+        },
+        {
+          name: 'Iain Pile',
+          avatar: 'iain',
+        },
+        {
+          name: 'Leo Decter',
+          avatar: 'leo',
+        },
+        {
+          name: 'Max Tomsick',
+          avatar: 'max',
+        },
+        {
+          name: 'Pinxuan Huang',
           avatar: 'pi',
         },
         {
-          name: '22',
-          avatar: 'pi',
+          name: 'Rose Zhou',
+          avatar: 'rose',
         },
         {
-          name: '33',
-          avatar: 'pi',
-        },
-        {
-          name: 'long name test nyaaaaaa',
-          avatar: 'pi',
+          name: 'Yein Lillian Lee',
+          avatar: 'lillian',
         },
       ]
     }
