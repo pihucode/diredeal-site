@@ -1,17 +1,20 @@
 <template>
-  <div class='team-section'>
+  <div class="team-section">
     <!-- <h2>Catana Games</h2> -->
-    <img class='team-logo' :src="require(`@/assets/team-logo.png`)" />
+    <img class="team-logo" :src="require(`@/assets/team-logo.png`)" />
 
-    <div class='avatars-grid'>
-      <div class='avatar-container' v-for="member in members" :key="member.name">
-        <div class='cropped'>
-          <img :src='require(`@/assets/avatars/${member.avatar}.png`)'/>
+    <div class="avatars-grid">
+      <div
+        class="avatar-container"
+        v-for="member in members"
+        :key="member.name"
+      >
+        <div class="cropped">
+          <img :src="require(`@/assets/avatars/${member.avatar}.png`)" />
         </div>
         <p>{{ member.name }}</p>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -21,46 +24,44 @@ export default {
     return {
       members: [
         {
-          name: 'Annie Deng',
-          avatar: 'annie',
+          name: "Annie Deng",
+          avatar: "annie",
         },
         {
-          name: 'Genna Haddad',
-          avatar: 'genna',
+          name: "Genna Haddad",
+          avatar: "genna",
         },
         {
-          name: 'Iain Pile',
-          avatar: 'iain',
+          name: "Iain Pile",
+          avatar: "iain",
         },
         {
-          name: 'Leo Decter',
-          avatar: 'leo',
+          name: "Leo Decter",
+          avatar: "leo",
         },
         {
-          name: 'Max Tomsick',
-          avatar: 'max',
+          name: "Max Tomsick",
+          avatar: "max",
         },
         {
-          name: 'Pinxuan Huang',
-          avatar: 'pi',
+          name: "Pinxuan Huang",
+          avatar: "pi",
         },
         {
-          name: 'Rose Zhou',
-          avatar: 'rose',
+          name: "Rose Zhou",
+          avatar: "rose",
         },
         {
-          name: 'Yein Lillian Lee',
-          avatar: 'lillian',
+          name: "Yein Lillian Lee",
+          avatar: "lillian",
         },
-      ]
-    }
-  }
+      ],
+    };
+  },
 };
-
 </script>
 
 <style scoped>
-
 p {
   font-weight: bold;
   color: rgb(22, 21, 24);
@@ -110,7 +111,7 @@ p {
 }
 
 .cropped img {
-  margin: -80px 0px 0px -84px;
+  margin: -86px 0px 0px -84px;
   width: 320px;
 }
 </style>

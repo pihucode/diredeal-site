@@ -1,11 +1,45 @@
 <template>
   <div class="hero-container">
-    <img class='hero-logo' :src="require(`@/assets/diredeal-logo.png`)" />
+    <img class="hero-logo" :src="require(`@/assets/diredeal-logo.png`)" />
 
-  <div class="temp-container">
-    <p>A strategy card game</p>
-    <p>To be released in May, 2021</p>
-  </div>
+    <!-- <div class="temp-container">
+      <p>A strategy card game</p>
+      <p>To be released in May, 2021</p>
+    </div> -->
+
+    <div class="download-container">
+      <img class="app-icon" :src="require(`@/assets/app-icon.png`)" />
+      <h2>Download Now!</h2>
+      <p class="subtext">Available on both PC and mobile</p>
+      <div class="downloads">
+        <a
+          class="download-link"
+          href="https://github.com/mtomsick/dire-deal/releases/tag/0.6.1"
+          target="_blank"
+        >
+          <button class="download-btn2">Windows/Android</button>
+        </a>
+        <a
+          class="download-link"
+          href="https://github.com/mtomsick/dire-deal/releases/tag/0.6"
+          target="_blank"
+        >
+          <button class="download-btn2">Mac/iPhone</button>
+        </a>
+        <!-- <a href="url">
+          <img
+            class="download-badge"
+            :src="require(`@/assets/ui/app-store-badge.png`)"
+          />
+        </a>
+        <a href="url">
+          <img
+            class="download-badge"
+            :src="require(`@/assets/ui/google-play-badge.png`)"
+          />
+        </a> -->
+      </div>
+    </div>
 
     <!-- <div class='video-container'>
       <b-embed
@@ -14,21 +48,22 @@
         allowfullscreen
       ></b-embed>
     </div> -->
-
   </div>
 </template>
 
 <script>
-export default {
-};
+export default {};
 </script>
 
 <style scoped>
-
 p {
   /* font-weight: bold; */
   font-size: 24px;
   font-style: italic;
+}
+
+h2 {
+  margin: 14px;
 }
 
 .hero-container {
@@ -43,7 +78,62 @@ p {
 .hero-logo {
   width: 620px;
   max-width: 80vw;
-  margin-top: 120px;
+  margin-top: 60px;
+}
+
+.app-icon {
+  width: 128px;
+  margin: 16px;
+}
+.subtext {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.downloads {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.download-badge,
+.download-btn {
+  height: 60px;
+  margin: 16px;
+}
+.download-btn {
+  display: inline-block;
+  padding: 0 14px;
+  border: 2px solid gray;
+  border-radius: 8px;
+  text-transform: capitalize;
+  font-weight: bold;
+  background-color: black;
+  color: whitesmoke;
+  text-align: center;
+  transition: all 0.2s;
+}
+.download-btn:hover {
+  text-decoration: underline;
+}
+
+.download-btn2 {
+  display: inline-block;
+  padding: 14px 28px;
+  margin: 16px;
+  border: none;
+  /* 2px solid black; */
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  background-color: rgb(7 152 147);
+  color: rgb(11 25 25);
+  text-align: center;
+  transition: all 0.2s;
+}
+.download-btn2:hover {
+  color: rgb(250 189 53);
+  background-color: rgb(11 25 25);
 }
 
 .temp-container {
@@ -67,10 +157,10 @@ p {
 }
 
 .video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>

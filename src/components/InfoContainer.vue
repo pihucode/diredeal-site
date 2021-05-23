@@ -13,7 +13,7 @@
       <div class='about-container'>
         <h2>About</h2>
         <p>
-          Dire Deal is a roguelite card game set in a fantasy world filled with threatening monsters. As a bounty hunter, players will fight dangerous creatures, each with their own abilities. The game emphasizes planning and resource management, as in battle, a single misstep can have long-lasting consequences.
+          Monsters and bandits threaten a fantasy town, and it falls on you, a bounty hunter, to protect it (for suitable pay, of course) in this single-player card game. 
         </p>
       </div>
     </div>

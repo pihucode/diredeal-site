@@ -5,7 +5,7 @@
       <b-carousel
         id="carousel"
         v-model="slide"
-        :interval="4000"
+        :interval="9000"
         controls
         indicators
         background="#ababab"
@@ -15,10 +15,11 @@
         @sliding-end="onSlideEnd"
       >
         <!-- Slides with image only -->
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
-        <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58"></b-carousel-slide>
+        <b-carousel-slide
+        v-for="image in images"
+        :img-src="image"
+        :key="image"
+        ></b-carousel-slide>
 
       </b-carousel>
     </div>
@@ -31,7 +32,11 @@
     data() {
       return {
         slide: 0,
-        sliding: null
+        sliding: null,
+        images: [
+          "https://i.imgur.com/0VhmQtA.jpg",
+          "https://i.imgur.com/ZI7FuVT.jpg"
+        ]
       }
     },
     methods: {
@@ -50,5 +55,10 @@
 /* // Import Bootstrap an BootstrapVue CSS files (order is important) */
 /* @import '../assets/css/bootstrap.css'; */
 /* @import '~/bootstrap-vue/dist/bootstrap-vue.css'; */
+
+h2 {
+  font-weight: bold;
+  padding: 24px 0;
+}
 
 </style>

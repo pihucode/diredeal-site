@@ -1,15 +1,15 @@
 <template>
-  <div id='app' class='wrapper'>
-
+  <div id="app" class="wrapper">
     <section class="section parallax main-bg">
       <Hero />
     </section>
 
-      <div class='main-container'>
-        <!-- <Screenshots /> -->
-        <InfoContainer />
-        <Team />
-      </div>
+    <div class="main-container">
+      <InfoContainer />
+      <Screenshots />
+      <Features />
+      <Team />
+    </div>
 
     <Footer />
   </div>
@@ -18,28 +18,30 @@
 <script>
 /* eslint-disable vue/no-unused-components */
 
-import Hero from './components/Hero'
-import Screenshots from './components/Screenshots'
-import InfoContainer from './components/InfoContainer'
-import Team from './components/Team'
-import Footer from './components/Footer'
-import TestA from './components/TestA'
+import Hero from "./components/Hero";
+import InfoContainer from "./components/InfoContainer";
+import Screenshots from "./components/Screenshots";
+import Features from "./components/Features.vue";
+import Team from "./components/Team";
+import Footer from "./components/Footer";
+import TestA from "./components/TestA";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Hero,
-    Screenshots,
     InfoContainer,
+    Screenshots,
+    Features,
     Team,
     Footer,
-    TestA
-  }
-}
+    TestA,
+  },
+};
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 body {
   background: rgb(54, 54, 54) !important;
@@ -61,7 +63,7 @@ p {
 }
 
 #app {
-  font-family: 'Montserrat', Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: whitesmoke;
@@ -79,15 +81,17 @@ p {
 /* Source: https://www.digitalocean.com/community/tutorials/css-pure-css-parallax */
 .wrapper {
   height: 100vh;
+  min-height: 700px;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 2px;
   /* background: rgb(49, 193, 212); */
 }
 
-.section { 
+.section {
   position: relative;
   height: 100vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,7 +114,6 @@ p {
 }
 
 .main-bg::after {
-  background: url('./assets/hero-bg.jpg') no-repeat center / cover;
+  background: url("./assets/hero-bg.jpg") no-repeat center / cover;
 }
-
 </style>
