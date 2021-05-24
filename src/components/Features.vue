@@ -3,6 +3,10 @@
     <h2>Features</h2>
     <div class="features">
       <div class="descr">
+        <img
+          class="icon"
+          :src="require(`@/assets/images/enchanting-art.png`)"
+        />
         <h3 class="title">Enchanting Art</h3>
         <p>
           Inspired by fantasy monsters and eldritch palettes, every enemy is a
@@ -10,6 +14,7 @@
         </p>
       </div>
       <div class="descr">
+        <img class="icon" :src="require(`@/assets/images/easy-to-learn.png`)" />
         <h3 class="title">Easy to learn</h3>
         <p>
           With a simple card UI and straightforward gameplay, even new hunters
@@ -17,6 +22,10 @@
         </p>
       </div>
       <div class="descr">
+        <img
+          class="icon"
+          :src="require(`@/assets/images/reactive-sound.png`)"
+        />
         <h3 class="title">Reactive Sounds</h3>
         <p>
           As you hunt your targets, the sounds of your actions react to the pace
@@ -26,6 +35,10 @@
         </p>
       </div>
       <div class="descr">
+        <img
+          class="icon"
+          :src="require(`@/assets/images/unlockable-abilities.png`)"
+        />
         <h3 class="title">Unlockable Abilities</h3>
         <p>
           Completing hunts can unlock powerful abilities that can be used to
@@ -48,6 +61,7 @@ h2 {
 
 p {
   margin: 0;
+  font-size: 16px;
 }
 
 .features {
@@ -66,10 +80,15 @@ p {
   background: rgba(6, 134, 151, 0.253);
 }
 
+.icon {
+  width: 100%;
+}
+
 .title {
   text-transform: uppercase;
   font-weight: normal;
-  padding-bottom: 12px;
+  padding-top: 26px;
+  padding-bottom: 8px;
   text-align: center;
 }
 </style>

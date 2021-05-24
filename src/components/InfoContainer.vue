@@ -3,10 +3,10 @@
     <!-- <div class='bg-div'></div> -->
 
     <div class="info-container">
-      <div v-tilt="{speed: 250, perspective: 900}" class='card-container'>
-        <img :src="require(`@/assets/cards/card-impaled-bg.png`)" width="320"/>
+      <div v-tilt="{speed: 200, perspective: 2021}" class='card-container'>
+        <img :src="require(`@/assets/cards/gambit-card.png`)" width="320"/>
         <div class='card-foreground'>
-          <img :src="require(`@/assets/cards/card-impaled-fg.png`)" width="360"/>
+          <img :src="require(`@/assets/cards/gambit-item.png`)" width="360"/>
         </div>
       </div>
 

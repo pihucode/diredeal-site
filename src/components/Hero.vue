@@ -10,7 +10,7 @@
     <div class="download-container">
       <img class="app-icon" :src="require(`@/assets/app-icon.png`)" />
       <h2>Download Now!</h2>
-      <p class="subtext">Available on both PC and mobile</p>
+      <p class="subtext">&#8212; Available on both PC and mobile &#8212;</p>
       <div class="downloads">
         <a
           class="download-link"
