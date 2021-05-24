@@ -81,6 +81,7 @@ p {
 
 .team-logo {
   width: 360px;
+  max-width: 100%;
   margin-bottom: 24px;
 }
 
@@ -113,5 +114,11 @@ p {
 .cropped img {
   margin: -86px 0px 0px -84px;
   width: 320px;
+}
+
+@media only screen and (max-width: 900px) {
+  .team-section {
+    max-width: 100%;
+  }
 }
 </style>

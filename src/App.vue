@@ -5,8 +5,10 @@
     </section>
 
     <div class="main-container">
-      <InfoContainer />
-      <Screenshots />
+      <div class="resposive-display">
+        <InfoContainer />
+        <Screenshots />
+      </div>
       <Features />
       <Team />
     </div>
@@ -50,7 +52,7 @@ export default {
 }
 
 body {
-  background: rgb(54, 54, 54) !important;
+  background: rgb(44, 49, 56) !important;
 }
 
 ::selection {
@@ -85,7 +87,7 @@ p {
   margin: auto !important;
   width: 80vw;
   padding: 0 32px;
-  background: rgb(27, 27, 27);
+  background: rgb(14, 25, 30);
   margin-top: 60px;
 }
 
@@ -127,5 +129,20 @@ p {
 
 .main-bg::after {
   background: url("./assets/hero-bg.jpg") no-repeat center / cover;
+}
+
+.resposive-display {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  .resposive-display {
+    display: none;
+  }
+
+  .main-container {
+    width: 100vw;
+    padding: 0;
+  }
 }
 </style>

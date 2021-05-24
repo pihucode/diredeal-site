@@ -56,7 +56,8 @@ export default {};
 
 <style scoped>
 h2 {
-  margin: 32px;
+  padding-top: 64px;
+  padding-bottom: 24px;
 }
 
 p {

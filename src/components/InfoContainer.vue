@@ -44,8 +44,8 @@ h2 {
   display: flex;
   flex-direction: row;
   height: 420px;
-  background: rgb(27, 27, 27);
-  border: 2px solid whitesmoke;
+  background: rgb(7, 42, 42);
+  border: 2px solid rgb(182, 105, 4);
   transform: skewX(-0.24rad);
 }
 

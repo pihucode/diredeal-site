@@ -57,7 +57,8 @@
 /* @import '~/bootstrap-vue/dist/bootstrap-vue.css'; */
 
 h2 {
-  padding: 24px 0;
+  padding-top: 64px;
+  padding-bottom: 24px;
 }
 
 </style>

@@ -130,14 +130,14 @@ button {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 26px;
-  background-color: rgb(7 152 147);
+  background-color: rgb(7, 152, 147);
   color: rgb(11 25 25);
   text-align: center;
   transition: all 0.2s;
 }
 .download-btn2:hover {
-  color: rgb(250 189 53);
-  background-color: rgb(11 25 25);
+  color: rgb(250, 189, 53);
+  background-color: rgb(11, 25, 25);
 }
 
 .temp-container {
