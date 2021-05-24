@@ -57,7 +57,6 @@
 /* @import '~/bootstrap-vue/dist/bootstrap-vue.css'; */
 
 h2 {
-  font-weight: bold;
   padding: 24px 0;
 }
 

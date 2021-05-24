@@ -66,6 +66,10 @@ h2 {
   margin: 14px;
 }
 
+button {
+  font-family: "Rise-of-Kingdom";
+}
+
 .hero-container {
   /* background: linear-gradient(rgb(17, 17, 17), rgb(54, 54, 54)); */
   /* background: url('../assets/hero-bg.jpg'); */

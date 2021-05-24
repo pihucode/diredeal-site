@@ -43,6 +43,12 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+@font-face {
+  font-family: "Rise-of-Kingdom";
+  src: local("Rise-of-Kingdom"),
+    url(./assets/fonts/Rise-of-Kingdom.ttf) format("truetype");
+}
+
 body {
   background: rgb(54, 54, 54) !important;
 }
@@ -53,13 +59,19 @@ body {
 }
 
 h2 {
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 42px !important;
   text-align: center;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Rise-of-Kingdom";
+}
+
 p {
-  font-size: 18px;
+  font-size: 22px;
+  font-family: "Rise-of-Kingdom";
 }
 
 #app {

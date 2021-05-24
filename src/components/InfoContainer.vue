@@ -38,7 +38,6 @@ export default {
 
 h2 {
   margin-bottom: 36px;
-  font-weight: bold;
 }
 
 .info-container {
