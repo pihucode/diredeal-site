@@ -10,18 +10,18 @@
     <div class="download-container">
       <img class="app-icon" :src="require(`@/assets/app-icon.png`)" />
       <h2>Download Now!</h2>
-      <p class="subtext">&#8212; Available on both PC and mobile &#8212;</p>
+      <p class="subtext">&#8212; Available on both desktop and mobile &#8212;</p>
       <div class="downloads">
         <a
           class="download-link"
-          href="https://github.com/mtomsick/dire-deal/releases/tag/0.6.1"
+          href="https://github.com/mtomsick/dire-deal/releases/tag/1.0.1"
           target="_blank"
         >
           <button class="download-btn2">Windows/Android</button>
         </a>
         <a
           class="download-link"
-          href="https://github.com/mtomsick/dire-deal/releases/tag/0.6"
+          href="https://github.com/mtomsick/dire-deal/releases/tag/1.0"
           target="_blank"
         >
           <button class="download-btn2">Mac/iPhone</button>
